@@ -10,7 +10,6 @@ RUN cd /var/www/html && \
     touch /var/www/html/install.lock && \
     echo "6.5.1.1" > /shopware_version && \
     rm -f /var/www/html/config/services/defaults_test.xml && \
-    cp /etc/shopware/configs/services/jwt.xml /var/www/html/config/services/ && \
     cp /etc/shopware/configs/services/services.xml /var/www/html/config/ && \
     chown -R www-data:www-data /var/www
 
